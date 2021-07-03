@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
+  place-content: center;
+  background-color: #ecf0f1;
+  height: 100vh;
+
+}
+
+
+.container{
+  display: flex;
+  margin-top: 10vh;
+  background-color:white ;
+  height: 80vh;
+  width: 80vw ;
+  box-shadow: 10px 0px 10px rgba(0, 0,0,0.5);
+}
+.sidebar{
+
+  flex: 0.4;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ 
+
+}
+.sidebar > input{
+  height: 40px;
+  width: 300px;
+  margin: 20px;
+  margin-top: 50%;
+  font-size: large;
+  border:none;
+  box-shadow: 10px 0px 10px rgba(0, 0,0,0.5);
+
+
+    
+}
+.sidebar>button{
+  background-color: rgb(148, 194, 176);
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  color: #ecf0f1;
+  font-size: 20px;
+  text-align: center;
+  padding: auto;
+  margin-left: 100px;
+  box-shadow: 10px 0px 10px rgba(0, 0,0,0.5);
+  border-color:seashell;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.task{
+  background-color: #f7f7f7de;
+  flex:1;
+  overflow: scroll;
+  overflow-x: hidden;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.card{
+  background-color: white;
+  height: fit-content;
+  width: 40vw;
+  margin:50px;
+  box-shadow: 10px 0px 10px rgba(0, 0,0,0.5);
+  padding:2px;
+  border-radius: 5px;
+
+}
+.card>button{
+  background-color: #e84118;
+  font-size: large;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  border-color: crimson;
 }
